@@ -1,11 +1,12 @@
 jQuery(document).ready(function(){
 	// Single image
-	jQuery("#single-image").click(function(){
-		jQuery("#cp-social-share").addClass("cp-social-share-popup");
+	jQuery("#read-more").click(function(){
+		jQuery("#wpcp-page").addClass("wpcp-page-popup");
 	});
 		jQuery(".close-image").click(function(){
-		jQuery("#cp-social-share").addClass("closeimage");
+		jQuery("#wpcp-page").addClass("closeimage");
 			setTimeout(function() {
-	        	jQuery("#cp-social-share").removeClass("cp-social-share-popup closeimage");}, 400);
+	        	jQuery("#wpcp-page").removeClass("wpcp-page-popup closeimage");}, 400);
 	});
 });
+

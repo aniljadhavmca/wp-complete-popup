@@ -18,10 +18,10 @@
 		    else {
 			    $page_id = $atts['id']; // the ID of the Bio page
 			    $page_data = get_page( $page_id );
-				$output .= '<div id="single-image">';
+				$output .= '<div id="read-more">';
 				$output .= '<span>Read More</span></div>';
-				$output .= '<div id="cp-social-share" class="social-share-modal">';
-				$output .= '<div class="cp-social-share-content">';
+				$output .= '<div id="wpcp-page" class="page-modal">';
+				$output .= '<div class="wpcp-page-content">';
 				$output .= '<div class="wpcp-modal-header">';
 				$output .= '<h2>' . $page_data->post_title . '</h2>';
 				$output .= '</div>';
@@ -35,3 +35,17 @@
 			}
 		}
 
+
+// <div class="section_block">
+// <a class="block" href="#""
+// 	<h3> Subscribe Form </h3>
+// </a>
+
+// <a class="block" href="#""
+// 	<h3> Subscribe Form </h3>
+// </a>
+
+// <a class="block" href="#""
+// 	<h3> Subscribe Form </h3>
+// </a>
+// </div>

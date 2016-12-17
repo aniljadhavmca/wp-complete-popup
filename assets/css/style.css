@@ -1,5 +1,5 @@
 
-.social-share-modal {
+.page-modal {
     text-align: center;
     display: none;
     position: fixed;
@@ -13,12 +13,13 @@
 }
 /* Modal Content */
 
-.cp-social-share-content {
-    position: absolute;
+.wpcp-page-content {
+    position: absolute; 
+    padding: 50px 30px;
+    margin: 20% auto;
     width: 992px;
     background-color: #fefefe;
     left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -32,7 +33,7 @@
     opacity: 0.5;
 }
 
-.cp-social-share-popup {
+.wpcp-page-popup {
     position: absolute;
     display: block;
     animation-name: zoomIn;
@@ -317,4 +318,42 @@
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
     }
+}
+
+/*Page content css*/
+
+.section_block {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.block {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    background-color: #d8baba;
+    padding: 60px 26px 28px 26px;
+    position: relative;
+    text-align: center;
+    outline-offset: -7px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    transition: all 0.3s;
 }

@@ -8,7 +8,7 @@
  * Author:            Anil
  * Plugin URI:        aniljadhav.ani
  * Text Domain:       complete-popup
- * License:           GPL-2.0+
+ * License:           GPL
  **/
 
 /**********************************
@@ -33,6 +33,7 @@ load_plugin_textdomain( 'complete-popup', false, dirname( plugin_basename( __FIL
 * includes
 **********************************/
 
-include(WPCP_BASE_DIR . '/inc/template.php');
 include(WPCP_BASE_DIR . '/inc/script.php');
+include(WPCP_BASE_DIR . '/inc/template.php');
+include(WPCP_BASE_DIR . '/inc/setting.php');
  

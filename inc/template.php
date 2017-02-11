@@ -13,10 +13,12 @@
 			   
 			), $atts ));
 
-		  		var_dump( $atts );
+		  		// var_dump( $atts );
+
+		  	// echo $atts['page_id'] . "Anil";
 		   
 				    $page_data = get_post( $atts['page_id'] );
-					$output .= '<div class="read-more">';
+					$output .= '<div data-role="page" id="wpcp-popup-'.$atts['page_id'].'" class="read-more">';
 					$output .= '<span>Read More</span></div>';
 					$output .= '<div id="wpcp-page" class="page-modal">';
 					$output .= '<div class="wpcp-page-content">';

@@ -8,18 +8,14 @@
 
 		function wpcp_genereate_shortcode( $atts )
 		{
-		    $output = '';
-		    $atts = shortcode_atts(
-				array(
-					'id' => '',
-				), $atts, 'show_page_content' );
-		    //var_dump($atts);
-		    foreach ( $atts as $key => $get_page_id ) {
-		    //   var_dump($key);
-			  echo "$get_page_id <br>";
-		   			
+		  extract(shortcode_atts( array(
+			   'page_id'   => '',
+			   
+			), $atts ));
 
-				    $page_data = get_page( $get_page_id);
+		  		var_dump( $atts );
+		   
+				    $page_data = get_post( $atts['page_id'] );
 					$output .= '<div class="read-more">';
 					$output .= '<span>Read More</span></div>';
 					$output .= '<div id="wpcp-page" class="page-modal">';
@@ -34,9 +30,6 @@
 					$output .= '<span class="close-image close">&times</span>';
 					$output .= '</div>';
 					return $output;
-			    	ob_get_clean($get_page_id);
-				
-			}
 		}
 
 
